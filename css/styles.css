@@ -1,0 +1,125 @@
+body, html {
+    height: 100%;
+    margin: 0%;
+}
+.parallax {
+    background-image: url("../img/background.png");
+    height: 100%; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0%;
+}
+nav {
+    overflow: hidden;
+    background-color: burlywood;
+    width: 100%;
+    top: 0px;
+    height: 100px;
+    position:fixed;
+    padding-bottom: 10px black;
+
+}
+
+nav a {
+    color: bisque;
+    text-align: center;
+    text-decoration: none;
+    /* display:block; */
+
+}
+
+.navItems li{
+    list-style-type: none;
+    float: right;
+    vertical-align: middle;
+
+}
+#logo {
+    width: 25%;
+    vertical-align: middle;
+}
+#logoImage {
+    height:100%;
+    width:90px;
+    float: left;
+    bottom: 10px;
+    
+}
+#bunBunLogo {
+    top:0px;
+    width: 80%;
+}
+#logoTitle {
+    float:left;
+    padding-top:10px;
+}
+#logoTitle a {
+    font-family: Mansalva;
+    bottom: 50px;
+    font-size: 40px;
+}
+.navItem {
+    padding-top:17px;
+}
+.navItem a {
+    padding: 12px;
+    font-size: 30px;
+    font-family: Mansalva;
+    bottom: 10px;
+}
+body {
+    text-align: center;
+}
+#about {
+    display: inline-block;
+    width: 500px;
+    padding: 0 auto;
+    background-color: bisque;
+    margin-top: 250px;
+    border-radius: 20px;
+
+    padding:10px;
+
+    /* margin: 100 auto; */
+}
+#about h1 {
+    font-family: Mansalva;
+}
+#catering {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 0px 30px;
+
+}
+#rolls, #icing, #quantity {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+#rolls {
+    /* margin-left: 80px; */
+    width: 40%;
+    background-color: bisque;
+    left: 100px;
+    border-radius: 20px;
+}
+#icings {
+    width:25%;
+    background-color: bisque;
+    border-radius: 20px;
+}
+#quantity {
+    background-color: bisque;
+    border-radius: 20px;
+}
+.cols {
+    flex: 67%;
+    padding: 0 4px;
+}
+.cols .food img {
+    
+  }
