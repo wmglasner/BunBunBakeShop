@@ -4,27 +4,89 @@
 <head>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet" rel="stylesheet">
+
+
+
 </head>
 
 <body>
-    
-    <nav>
-        <ul class="navItems">
-            <li id="logoImage"><img src="img/cinnamon-roll.png" /></li>
-            <li id="logoTitle"><a href="index.html" >Bun Bun Bake Shop</a></li>
-            <li><a href="order.html">Order</a></li>
-            <li><a href="#catering">Catering</a></li>
-            <li><a href="#locations">Locations</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="cart.html"><img src="img/shoppingCart.svg" /></a></li>
 
-        </ul>
-    </nav>
-    <div class="parallax"></div>
-
+        <nav>
+                <ul class="navItems">
+                    <li id="logoImage"><img id="bunBunLogo" src="img/cinnamon-roll.png" /></li>
+                    <li id="logoTitle"><a href="index.html">Bun Bun Bake Shop</a></li>
+        
+        
+        
+        
+                    <li class="navItem"><a href="cart.html"><img src="img/shoppingCart.svg" /></a></li>
+                    <li class="navItem"><a href="index.html#contactor">Contact</a></li>
+                    <li class="navItem"><a href="index.html#locator">Locations</a></li>
+                    <li class="navItem"><a href="index.html#caterer">Catering</a></li>
+                    <li class="navItem"><a href="order.html">Order</a></li>
+                </ul>
+            </nav>
+    <div class="parallax">
+        <div id="order">
+            <div id="rolls">
+                <div id="original" class="food selected" >
+                    <img src="img/cinnamon-roll (2).png" />
+                    <a href="originalDetail.html"><div class="flavor">Original</div></a>
+                </div>
+                <div id="gf" class="food">
+                    <img src="img/cinnamon-roll (2).png" />
+                    <a href="gfDetail.html"><div class="flavor">Gluten Free</div></a>
+                </div>
+                <div id="walnut" class="food">
+                    <img src="img/cinnamon-roll (2).png" />
+                    <a href="walnutDetail.html"><div class="flavor">Walnut</div></a>
+                </div>
+                <div id="blackberry" class="food">
+                    <img src="img/cinnamon-roll (2).png" />
+                    <a href="blackberryDetail.html"><div class="flavor">Blackberry</div></a>
+                </div>
+                <div id="pumpkin" class="food">
+                    <img src="img/cinnamon-roll (2).png" />
+                    <a href="pumpkinDetail.html"><div class="flavor">Pumpkin Spice</div></a>
+                </div>
+                <div id="caramel" class="food">
+                    <img src="img/cinnamon-roll (2).png" />
+                    <a href="caramelDetail.html"><div class="flavor">Caramel Pecan</div></a>
+                </div>
+            </div>
+            <div id="icings">
+                <div id="vanilla" class="icing selected">
+                    <img src="img/vanilla-roll.png" />
+                    <a><div class="flavor">Vanilla</div></a>
+                </div>
+                <div id="chocolate" class="icing">
+                    <img src="img/chocolate-roll.png" />
+                    <div class="flavor">Chocolate</div>
+                </div>
+                <div id="sugar" class="icing">
+                    <img src="img/sugar-roll.png" />
+                    <div class="flavor">Sugar Milk</div>
+                </div>
+                <div id="none" class="icing">
+                    <img src="img/empty-roll.png" />
+                    <div class="flavor">None</div>
+                </div>
+            </div>
+            <div id="quantity">
+                <select id="no">
+                    <option value="1">1</option>
+                    <option value="3">3</option>
+                    <option value="6">6</option>
+                    <option value="12">12</option>
+                </select>
+                <button id=addToCart>Add To Cart</button>
+            </div>
+        </div>
+    </div>
     
-    
-
 </body>
+<script type="text/javascript" src="js/scripts.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 </html>

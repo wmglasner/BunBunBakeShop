@@ -5,7 +5,6 @@ body, html {
 .parallax {
     background-image: url("../img/background.png");
     height: 100%; 
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -20,6 +19,7 @@ nav {
     height: 100px;
     position:fixed;
     padding-bottom: 10px black;
+    z-index: 1;
 
 }
 
@@ -75,51 +75,226 @@ body {
 }
 #about {
     display: inline-block;
-    width: 500px;
+    width: 600px;
     padding: 0 auto;
     background-color: bisque;
-    margin-top: 250px;
+    margin-top: 150px;
     border-radius: 20px;
 
     padding:10px;
+    font-family: nunito;
+
 
     /* margin: 100 auto; */
 }
 #about h1 {
     font-family: Mansalva;
 }
-#catering {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    margin: 0px 30px;
+#about > p {
+    display:inline;
+    /* widows: 60%; */
+    clear:left;
+}
+#about > img {
+    width:40%;
+    height: auto;
+    clear:right; 
+}
+.cater {
+    margin:20px;
+    text-align: center;
+}
+.cater > img {
+    margin:10px;
+    bottom: 0px;
+}
+.cater > a {
+    
+}
+#orderNow {
+    background-color:burlywood;
+    width: 20%;
+    margin: auto;
+    border-radius: 10px;
 
 }
-#rolls, #icing, #quantity {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
+#orderNow > a {
+    text-decoration:none;
+    color: brown;
+}
+
+#catering {
+    display: inline-block;
+    width: 600px;
+    background-color: bisque;
+    margin-top: 350px;
+    border-radius: 20px;
+
+    padding:10px;
+    font-family: nunito;
+    margin-top:150px;
+    /* margin: 100 auto; */
+}
+
+#catering h1 {
+    font-family: Mansalva;
+}
+#locations {
+    display: inline-block;
+    width: 600px;
+    background-color: bisque;
+    margin-top: 350px;
+    border-radius: 20px;
+
+    padding:10px;
+    font-family: nunito;
+    margin-top:150px;
+}
+#locations h1 {
+    font-family: Mansalva;
+}
+#order {
+    /* display: inline-block; */
+    position: absolute;
+    margin: 0px 30px;
+    top: 175px;
+    left: 120px;
+    width: 80%;
+    height: 80%;
+}
+#contact {
+    display: inline-block;
+    width: 600px;
+    background-color: bisque;
+    margin-top: 350px;
+    border-radius: 20px;
+
+    padding:10px;
+    font-family: nunito;
+    margin-top:150px;
+}
+#contact h1 {
+    font-family: Mansalva;
+}
+#rolls, #icings, #quantity {
+    font-family:nunito;
 }
 #rolls {
     /* margin-left: 80px; */
-    width: 40%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 62%;
     background-color: bisque;
-    left: 100px;
     border-radius: 20px;
+    padding: 20px;
+    width:45%;
+    grid-gap: 20px;
+    align-items: center;
+    padding-bottom: 30px;
+    color: brown;
+
 }
+
 #icings {
-    width:25%;
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto auto;
+    width:30%;
     background-color: bisque;
     border-radius: 20px;
+    padding: 20px;
+    grid-gap: 20px;
+
+    left: 525px;
+    height:62%;
+    top: 0px;
+    padding-bottom: 30px;
+    color:brown;
+
 }
 #quantity {
+    text-align: center;
+    position: absolute;
     background-color: bisque;
     border-radius: 20px;
+    left: 700px;
+    width: 175px;
+    height:40px;
+    bottom: 100px;
+    color:brown;
 }
-.cols {
-    flex: 67%;
-    padding: 0 4px;
+#quantity select {
+    position: absolute;
+    /* float: left; */
+    top:10px;
+    left: 20px;
+
 }
-.cols .food img {
+#addToCart {
+    position: absolute;
+    top: 10px;
+    left: 70px;
+}
+
+.option {
+    display:grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    grid-gap: 20px;
+
+}
+.selected {
+    opacity: 1;
+    transition: opacity 1s, background 1s;
+    background: rgb(199, 109, 109);
+}
+#description {
+    position: absolute;
+    margin: 0px 30px;
+    top: 175px;
+    left: 120px;
+    width: 80%;
+    height: 70%;
+    background: burlywood;
+    border-radius: 20px;
+    font-family: Mansalva;
+}
+#description >p {
+    position:absolute;
+    width:40%;
+    left:500px;
+    text-align: left;
+    font-family: Nunito;
     
-  }
+}
+#description > img {
+    position:absolute;
+    width:40%;
+    left:50px;
+    border-radius: 20px;
+}
+
+#detailIcings {
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto auto;
+    width:15%;
+    background-color: bisque;
+    border-radius: 20px;
+    padding: 20px;
+    grid-gap: 20px;
+
+    left: 500px;
+    height:30%;
+    top: 200px;
+    padding-bottom: 30px;
+    color:brown;
+
+}
+#detailIcings > .icing >img {
+    width: 60%;
+}
+
+#detailIcings + #quantity {
+    top: 355px;
+}
